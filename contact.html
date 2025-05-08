@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Construction Management</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Construction Management System</a>
+            </div>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+               
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="php/contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

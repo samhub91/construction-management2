@@ -1,0 +1,90 @@
+/* General Home Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .logo a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Dashboard Section */
+.dashboard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard h1 {
+    font-size: 1.8rem;
+    color: #004080;
+}
+
+.dashboard p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* User Services Section */
+.user-services {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-services h2 {
+    color: #333;
+}
+
+.user-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-services ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-services h3 {
+    margin-top: 20px;
+    color: #007700;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eaeaea;
+    margin-top: 40px;
+}

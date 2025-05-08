@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Services</title>
+    <link rel="stylesheet" href="css/services.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Select Your Services</h1>
+    </header>
+    <main>
+        <form action="php/process_services.php" method="POST">
+            <div class="service-item">
+                <input type="checkbox" name="services[]" value="Consultation|50"> Consultation ($50)
+            </div>
+            <div class="service-item">
+                <input type="checkbox" name="services[]" value="Project Management|200"> Project Management ($200)
+            </div>
+            <div class="service-item">
+                <input type="checkbox" name="services[]" value="Site Inspection|100"> Site Inspection ($100)
+            </div>
+            <div class="service-item">
+                <input type="checkbox" name="services[]" value="Material Supply|300"> Material Supply ($300)
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

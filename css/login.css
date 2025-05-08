@@ -1,0 +1,127 @@
+/* Full-screen background image */
+body {
+    background: url("../assets/hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Full screen height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Centered container for login, register, and contact pages */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Glassmorphism effect for form containers */
+.login-container, .register-container, .contact-container {
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+/* Form styling */
+.login-container input, .register-container input, .contact-container input, 
+.login-container textarea, .contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.login-container input::placeholder, .register-container input::placeholder, .contact-container input::placeholder, .contact-container textarea::placeholder {
+    color: #eee;
+}
+
+/* Style the button */
+.login-container button, .register-container button, .contact-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-container button:hover, .register-container button:hover, .contact-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Links inside login, register, and contact pages */
+.login p, .register-container p, .contact-container p {
+    margin-top: 1rem;
+    color: white;
+}
+
+.login p a, .register-container p a, .contact-container p a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login p a:hover, .register-container p a:hover, .contact-container p a:hover {
+    text-decoration: underline;
+}

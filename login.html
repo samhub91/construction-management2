@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Construction Management</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Construction Management System</a>
+            </div>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+           
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="php/login.php" method="POST">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="password" name="password" placeholder="Your Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+            <p><a href="forgot_password.html">Forgot Password?</a></p>
+
+        </div>
+    </div>
+
+</body>
+</html>
